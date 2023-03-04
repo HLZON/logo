@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'byekan';
+    src: url('fonts/BYekan.eot@#') format('eot'), /* IE6�8 */ url('fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/BYekan.ttf') format('truetype');  /* Saf3�5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+/* General Setting */
+
+body {
+            background-color: #F7F7fF;
+        }
+
+        .logo {
+            padding: 25px 0 35px;
+            text-align: center;
+        }
+
+        a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline
+        }
+
+        html {
+            line-height: 1
+        }
+
+        ol, ul {
+            list-style: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        caption, td, th {
+            text-align: left;
+            font-weight: 400;
+            vertical-align: middle
+        }
+
+        blockquote, q {
+            quotes: none
+        }
+
+        blockquote:after, blockquote:before, q:after, q:before {
+            content: "";
+            content: none
+        }
+
+        a img {
+            border: none
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+            display: block
+        }
+
+        .fof {
+            -webkit-animation: fof-stars 4.75s 4.5s forwards ease-in-out;
+            -moz-animation: fof-stars 4.75s 4.5s forwards ease-in-out;
+            -ms-animation: fof-stars 4.75s 4.5s forwards ease-in-out;
+            -o-animation: fof-stars 4.75s 4.5s forwards ease-in-out;
+            animation: fof-stars 4.75s 4.5s forwards ease-in-out;
+            background: #161c21 url(images/bg-404-stars.svg) center -300px repeat-x;
+            -webkit-background-size: 1117px 832px;
+            -moz-background-size: 1117px 832px;
+            -o-background-size: 1117px 832px;
+            background-size: 1117px 832px;
+            height: 700px;
+            overflow: hidden;
+            position: relative;
+            width: 100%
+        }
+
+        .fof b {
+            display: block;
+            position: absolute
+        }
+
+        .fof-inner {
+            -webkit-animation: fof-inner 1.7s 6.4s forwards ease-in;
+            -moz-animation: fof-inner 1.7s 6.4s forwards ease-in;
+            -ms-animation: fof-inner 1.7s 6.4s forwards ease-in;
+            -o-animation: fof-inner 1.7s 6.4s forwards ease-in;
+            animation: fof-inner 1.7s 6.4s forwards ease-in;
+            height: 700px;
+            left: 50%;
+            margin-left: -523px;
+            position: absolute;
+            top: 0;
+            width: 1046px
+        }
+
+        .fof-ground {
+            -webkit-animation: fof-scenery 2s 4.5s forwards ease-in;
+            -moz-animation: fof-scenery 2s 4.5s forwards ease-in;
+            -ms-animation: fof-scenery 2s 4.5s forwards ease-in;
+            -o-animation: fof-scenery 2s 4.5s forwards ease-in;
+            animation: fof-scenery 2s 4.5s forwards ease-in;
+            height: 700px;
+            width: 1046px
+        }
+
+        .fof-anchor {
+            background: url(images/bg-404-anchor.svg) no-repeat
+        }
+
+        .fof-rocket {
+            background: url(images/bg-404-rocket.svg) no-repeat
+        }
+
+        .fof-rope {
+            background: url(images/bg-404-rope.svg) no-repeat
+        }
+
+        .fof-scenery {
+            background: url(images/bg-404-scenery.svg) no-repeat
+        }
+
+        .fof-smoke {
+            background: url(images/bg-404-smoke.svg) no-repeat
+        }
+
+        .fof-smoke2 {
+            background: url(images/bg-404-smoke2.svg) no-repeat
+        }
+
+        .fof-rope {
+            -webkit-animation: fof-rope 2s 4.5s forwards cubic-bezier(0.52, 0, .99, 1);
+            -moz-animation: fof-rope 2s 4.5s forwards cubic-bezier(0.52, 0, .99, 1);
+            -ms-animation: fof-rope 2s 4.5s forwards cubic-bezier(0.52, 0, .99, 1);
+            -o-animation: fof-rope 2s 4.5s forwards cubic-bezier(0.52, 0, .99, 1);
+            animation: fof-rope 2s 4.5s forwards cubic-bezier(0.52, 0, .99, 1);
+            -webkit-transform: rotate(26deg);
+            -moz-transform: rotate(26deg);
+            -ms-transform: rotate(26deg);
+            -o-transform: rotate(26deg);
+            transform: rotate(26deg);
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -ms-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+            height: 5px;
+            left: 89px;
+            top: 20px;
+            width: 490px;
+            z-index: -1
+        }
+
+        .fof-anchor {
+            -webkit-animation: fof-anchor 2s 4.5s forwards ease-in;
+            -moz-animation: fof-anchor 2s 4.5s forwards ease-in;
+            -ms-animation: fof-anchor 2s 4.5s forwards ease-in;
+            -o-animation: fof-anchor 2s 4.5s forwards ease-in;
+            animation: fof-anchor 2s 4.5s forwards ease-in;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: center bottom;
+            -moz-transform-origin: center bottom;
+            -ms-transform-origin: center bottom;
+            -o-transform-origin: center bottom;
+            transform-origin: center bottom;
+            bottom: 0;
+            height: 197px;
+            left: 50px;
+            width: 152px
+        }
+
+        .fof-scenery {
+            bottom: 0;
+            height: 358px;
+            right: 0;
+            width: 882px
+        }
+
+        .fof-fire {
+            -webkit-animation: fof-show .01s 1s forwards, fof-thrust .25s 1s alternate 100 steps(2);
+            -moz-animation: fof-show .01s 1s forwards, fof-thrust .25s 1s alternate 100 steps(2);
+            -ms-animation: fof-show .01s 1s forwards, fof-thrust .25s 1s alternate 100 steps(2);
+            -o-animation: fof-show .01s 1s forwards, fof-thrust .25s 1s alternate 100 steps(2);
+            animation: fof-show .01s 1s forwards, fof-thrust .25s 1s alternate 100 steps(2);
+            background: url(images/bg-404-fire.svg) no-repeat;
+            -webkit-background-size: 111px 110px;
+            -moz-background-size: 111px 110px;
+            -o-background-size: 111px 110px;
+            background-size: 111px 110px;
+            bottom: 113px;
+            height: 51px;
+            left: 469px;
+            opacity: 0;
+            width: 111px
+        }
+
+        .fof-rocket {
+            bottom: 75px;
+            height: 457px;
+            left: 412px;
+            width: 225px
+        }
+
+        .fof-smoke {
+            -webkit-animation: fof-show 1s 1.5s forwards, fof-smoke .8s 3.9s forwards ease-in;
+            -moz-animation: fof-show 1s 1.5s forwards, fof-smoke .8s 3.9s forwards ease-in;
+            -ms-animation: fof-show 1s 1.5s forwards, fof-smoke .8s 3.9s forwards ease-in;
+            -o-animation: fof-show 1s 1.5s forwards, fof-smoke .8s 3.9s forwards ease-in;
+            animation: fof-show 1s 1.5s forwards, fof-smoke .8s 3.9s forwards ease-in;
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+            bottom: 27px;
+            left: 515px;
+            height: 127px;
+            opacity: 0;
+            width: 232px;
+            z-index: 100
+        }
+
+        .fof-smoke2 {
+            -webkit-animation: fof-show 1s 1.75s forwards, fof-smoke2 .8s 3.9s forwards ease-in;
+            -moz-animation: fof-show 1s 1.75s forwards, fof-smoke2 .8s 3.9s forwards ease-in;
+            -ms-animation: fof-show 1s 1.75s forwards, fof-smoke2 .8s 3.9s forwards ease-in;
+            -o-animation: fof-show 1s 1.75s forwards, fof-smoke2 .8s 3.9s forwards ease-in;
+            animation: fof-show 1s 1.75s forwards, fof-smoke2 .8s 3.9s forwards ease-in;
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+            bottom: 27px;
+            height: 128px;
+            left: 305px;
+            opacity: 0;
+            width: 224px;
+            z-index: 100
+        }
+
+        .fof-text {
+            -webkit-animation: fof-text 8.75s forwards;
+            -moz-animation: fof-text 8.75s forwards;
+            -ms-animation: fof-text 8.75s forwards;
+            -o-animation: fof-text 8.75s forwards;
+            animation: fof-text 8.75s forwards;
+            color: #fff;
+            font-size: 22px;
+            padding-top: 25px;
+            text-align: center;
+            -webkit-font-smoothing: antialiased
+        }
+
+        .fof-text h1 {
+            color: #b54322;
+            font-size: 70px;
+            font-weight: 700;
+            margin-bottom: 10px
+        }
+
+        .fof-text a {
+            color: #238b9b;
+            text-decoration: none
+        }
+
+        .fof-text a:focus, .fof-text a:hover {
+            color: #2cb0c5;
+            text-decoration: underline
+        }
+
+        @-webkit-keyframes fof-anchor {
+            to {
+                -webkit-transform: rotate(10deg);
+                transform: rotate(10deg)
+            }
+        }
+
+        @-moz-keyframes fof-anchor {
+            to {
+                -moz-transform: rotate(10deg);
+                transform: rotate(10deg)
+            }
+        }
+
+        @keyframes fof-anchor {
+            to {
+                -webkit-transform: rotate(10deg);
+                -moz-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+                -o-transform: rotate(10deg);
+                transform: rotate(10deg)
+            }
+        }
+
+        @-webkit-keyframes fof-inner {
+            to {
+                -webkit-transform: translateY(700px);
+                transform: translateY(700px)
+            }
+        }
+
+        @-moz-keyframes fof-inner {
+            to {
+                -moz-transform: translateY(700px);
+                transform: translateY(700px)
+            }
+        }
+
+        @keyframes fof-inner {
+            to {
+                -webkit-transform: translateY(700px);
+                -moz-transform: translateY(700px);
+                -ms-transform: translateY(700px);
+                -o-transform: translateY(700px);
+                transform: translateY(700px)
+            }
+        }
+
+        @-webkit-keyframes fof-rope {
+            to {
+                -webkit-transform: rotate(-64deg);
+                transform: rotate(-64deg)
+            }
+        }
+
+        @-moz-keyframes fof-rope {
+            to {
+                -moz-transform: rotate(-64deg);
+                transform: rotate(-64deg)
+            }
+        }
+
+        @keyframes fof-rope {
+            to {
+                -webkit-transform: rotate(-64deg);
+                -moz-transform: rotate(-64deg);
+                -ms-transform: rotate(-64deg);
+                -o-transform: rotate(-64deg);
+                transform: rotate(-64deg)
+            }
+        }
+
+        @-webkit-keyframes fof-scenery {
+            to {
+                -webkit-transform: translateY(320px);
+                transform: translateY(320px)
+            }
+        }
+
+        @-moz-keyframes fof-scenery {
+            to {
+                -moz-transform: translateY(320px);
+                transform: translateY(320px)
+            }
+        }
+
+        @keyframes fof-scenery {
+            to {
+                -webkit-transform: translateY(320px);
+                -moz-transform: translateY(320px);
+                -ms-transform: translateY(320px);
+                -o-transform: translateY(320px);
+                transform: translateY(320px)
+            }
+        }
+
+        @-webkit-keyframes fof-show {
+            to {
+                opacity: 1
+            }
+        }
+
+        @-moz-keyframes fof-show {
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fof-show {
+            to {
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fof-smoke {
+            from {
+                opacity: 1
+            }
+            to {
+                -webkit-transform: translateX(140px);
+                transform: translateX(140px);
+                opacity: 0
+            }
+        }
+
+        @-moz-keyframes fof-smoke {
+            from {
+                opacity: 1
+            }
+            to {
+                -moz-transform: translateX(140px);
+                transform: translateX(140px);
+                opacity: 0
+            }
+        }
+
+        @keyframes fof-smoke {
+            from {
+                opacity: 1
+            }
+            to {
+                -webkit-transform: translateX(140px);
+                -moz-transform: translateX(140px);
+                -ms-transform: translateX(140px);
+                -o-transform: translateX(140px);
+                transform: translateX(140px);
+                opacity: 0
+            }
+        }
+
+        @-webkit-keyframes fof-smoke2 {
+            from {
+                opacity: 1
+            }
+            to {
+                -webkit-transform: translateX(-140px);
+                transform: translateX(-140px);
+                opacity: 0
+            }
+        }
+
+        @-moz-keyframes fof-smoke2 {
+            from {
+                opacity: 1
+            }
+            to {
+                -moz-transform: translateX(-140px);
+                transform: translateX(-140px);
+                opacity: 0
+            }
+        }
+
+        @keyframes fof-smoke2 {
+            from {
+                opacity: 1
+            }
+            to {
+                -webkit-transform: translateX(-140px);
+                -moz-transform: translateX(-140px);
+                -ms-transform: translateX(-140px);
+                -o-transform: translateX(-140px);
+                transform: translateX(-140px);
+                opacity: 0
+            }
+        }
+
+        @-webkit-keyframes fof-stars {
+            to {
+                background-position: center 0
+            }
+        }
+
+        @-moz-keyframes fof-stars {
+            to {
+                background-position: center 0
+            }
+        }
+
+        @keyframes fof-stars {
+            to {
+                background-position: center 0
+            }
+        }
+
+        @-webkit-keyframes fof-text {
+            0% {
+                opacity: 0
+            }
+            94% {
+                opacity: 0;
+                padding-top: 285px
+            }
+            100% {
+                opacity: 1;
+                padding-top: 285px
+            }
+        }
+
+        @-moz-keyframes fof-text {
+            0% {
+                opacity: 0
+            }
+            94% {
+                opacity: 0;
+                padding-top: 285px
+            }
+            100% {
+                opacity: 1;
+                padding-top: 285px
+            }
+        }
+
+        @keyframes fof-text {
+            0% {
+                opacity: 0
+            }
+            94% {
+                opacity: 0;
+                padding-top: 285px
+            }
+            100% {
+                opacity: 1;
+                padding-top: 285px
+            }
+        }
+
+        @-webkit-keyframes fof-thrust {
+            from {
+                background-position: 0 0
+            }
+            to {
+                background-position: 0 -124px
+            }
+        }
+
+        @-moz-keyframes fof-thrust {
+            from {
+                background-position: 0 0
+            }
+            to {
+                background-position: 0 -124px
+            }
+        }
+
+        @keyframes fof-thrust {
+            from {
+                background-position: 0 0
+            }
+            to {
+                background-position: 0 -124px
+            }
+        }
+html, body {
+    font-family: byekan !important;
+    direction: rtl;
+    text-align: right;
+}
+.fof-text h1
+{
+    font-family: byekan !important;
+}
+.logo a
+{
+    color: #4d4f50;
+    text-decoration: none;
+}
