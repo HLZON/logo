@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* persian font - jaguardesign */
+@font-face {
+  font-family: 'iran';
+  src: url('../fonts/iran.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/iran.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/iran.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+  font-family: 'yekan';
+  src: url('../fonts/yekan.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/yekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
