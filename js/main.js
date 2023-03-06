@@ -145,9 +145,9 @@ $(document).ready(function(){
     // Set you end date just below
     $('#countdown_dashboard').countDown({
         targetDate: {
-            'day': 31,
-            'month': 12,
-            'year': 2026,
+            'day': 28,
+            'month': 3,
+            'year': 2023,
             'hour': 11,
             'min': 13,
             'sec': 0
